@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --terminal-green: #00ff00;
+}
+
+body {
+  background-color: black;
+}
+
+.terminal-window {
+  @apply border border-green-500 p-6 rounded;
+}
+
+.terminal-header {
+  @apply flex items-center gap-4 mb-4;
+}
