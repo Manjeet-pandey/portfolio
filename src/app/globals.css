@@ -2,18 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --terminal-green: #00ff00;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-slate-800 bg-slate-50;
+  }
 }
 
-body {
-  background-color: black;
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
 }
 
-.terminal-window {
-  @apply border border-green-500 p-6 rounded;
-}
-
-.terminal-header {
-  @apply flex items-center gap-4 mb-4;
-}
